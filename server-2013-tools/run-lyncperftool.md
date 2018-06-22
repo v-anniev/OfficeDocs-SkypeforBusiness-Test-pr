@@ -56,12 +56,12 @@ To end the process, press Ctrl+C.
 > [!NOTE]
 > Before running LyncPerfTool directly, you must register the performance counters. Enter the following command to register performance counters:
 
-
-
 </div>
+
 ```c++
     regsvr32 /i /n /s LyncPerfToolPerf.dll
 ```
+
 <div class="alert">
 
 
