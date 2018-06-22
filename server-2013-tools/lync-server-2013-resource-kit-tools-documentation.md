@@ -1226,11 +1226,11 @@ The tool outputs the results of each of the operations.
 ## Examples
 
 The following is an example of the tool input.
-
+```c++
     MsTurnPing -ServerRole AudioVideoEdgeServer
     
     MsTurnPing -ServerRole BandwidthPolicyServer
-
+```
 </div>
 
 <div>
@@ -1527,9 +1527,9 @@ The SEFAUtil tool can be run only on a computer that is a part of a Trusted Appl
 **Creating a new Trusted Application for the SEFAUtil tool**
 
 1.  The SEFAUTil tool can be run only on a computer that is part of a trusted application pool. If needed, adding a pool as a new trusted application pool can be done via the Lync Server Management Shell with the following cmdlet:
-    
+    ```c++
         New-CsTrustedApplicationPool -id <Pool FQDN> -Registrar <Pool Registrar FQDN> -site Site:<Pool Site>
-    
+    ```
     <div class="alert">
     
 
@@ -1540,9 +1540,9 @@ The SEFAUtil tool can be run only on a computer that is a part of a Trusted Appl
     </div>
 
 2.  A trusted application needs to be defined in the topology for the SEFAUtil tool. To define SEFAUtil as a new trusted application, use the Lync Server Management Shell and execute the following cmdlet:
-    
+    ```c++
         New-CsTrustedApplication -ApplicationId sefautil -TrustedApplicationPoolFqdn <Pool FQDN>  -Port 7489
-    
+    ```
     <div class="alert">
     
 
@@ -1553,15 +1553,15 @@ The SEFAUtil tool can be run only on a computer that is a part of a Trusted Appl
     </div>
 
 3.  The topology changes need to be enabled. Enabling the topology changes can be done via the Lync Server Management Shell by executing the following cmdlet:
-    
+    ```c++
         Enable-CsToplogy
-
+	```
 4.  If needed, install the Lync Server 2013 Resource Kit Tools in the server that will be used to run the SEFAUtil tool (the server must be part of a trusted application pool).
 
 5.  Verify the SEFAUtil is running correctly. To do this, run the tool from a windows command prompt with administrator privileges to display the call forwarding settings of a user in the deployment. By default the tool will be located in: “…\\Program Files\\Microsoft Lync Server 2013\\Reskit”. To display the call forwarding settings of a user, use the following command:
-    
+    ```c++
         SEFAUtil.exe <user SIP address> /server:<Lync Server/Pool FQDN>
-    
+    ```
     The call forwarding settings of the user should be displayed.
 
 <div>
@@ -1610,9 +1610,9 @@ The following command displays the call handling for the user. `SEFAUtil.exe /se
 ## Set the Call Forward/No Answer Destination
 
 This example sets the call forward/no answer destination and the ring delay. Here, the /server switch is not provided; SEFAUtil attempts to autodiscover the Lync Server.
-
+```c++
     SEFAUtil.exe /server:lyncserver.contoso.com sip:katarina@contoso.com /enablefwdnoanswer /callanswerwaittime:30 /setfwddestination:+1425555 0126@contoso.com;user=phone
-
+```
 **Output**
 ```c++
     User Aor: sip:katarina@contoso.com
@@ -1629,9 +1629,9 @@ This example sets the call forward/no answer destination and the ring delay. Her
 ## Enable Call Forwarding Immediately
 
 This example immediately enables call-forwarding to another user.
-
+```c++
     SEFAUtil.exe sip:katarina@contoso.com /enablefwdimmediate /setfwddestination:anders@contoso.com
-
+```
 **Output**
 ```c++
     User Aor: sip:katarina@contoso.com
@@ -1714,6 +1714,7 @@ This example removes the delegate.
 ```c++
     SEFAUtil.exe /server:lyncserver.contoso.com sip:katarina@contoso.com /removedelegate:joe@contoso.com
 ```
+
 **Output**
 ```c++
     User Aor: sip:katarina@contoso.com
