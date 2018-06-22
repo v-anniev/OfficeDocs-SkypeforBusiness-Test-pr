@@ -1708,9 +1708,8 @@ This example removes the delegate.
 > [!NOTE]
 > When the last delegate is removed, delegate ringing is automatically disabled.
 
-
-
 </div>
+
 ```c++
     SEFAUtil.exe /server:lyncserver.contoso.com sip:katarina@contoso.com /removedelegate:joe@contoso.com
 ```
