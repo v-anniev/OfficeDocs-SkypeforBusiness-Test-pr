@@ -22,11 +22,11 @@ mtps_version: v=OCS.15
 
 <div id="mainBody">
 
-<span> </span>
+<span> </span>
 
 _**Topic Last Modified:** 2013-02-24_
 
-The Lync Server 2013 Persistent Chat Resource Kit tools help to make routine tasks easier for IT administrators who deploy and manage Lync Server 2013 Persistent Chat Server. In addition to installation instructions, this topic describes the purpose of each tool, and examples of its use.
+The Lync Server 2013 Persistent Chat Resource Kit tools help to make routine tasks easier for IT administrators who deploy and manage Lync Server 2013 Persistent Chat Server. In addition to installation instructions, this topic describes the purpose of each tool, and examples of its use.
 
 <div>
 
@@ -58,7 +58,7 @@ For optimal performance, the Lync Server 2013, Resource Kit Tools should be inst
 
 ## Resource Kit Tools Overview
 
-Here are the tools that are provided in the Lync Server 2013 Persistent Chat Resource Kit. The following section provides a description of each tool, including requirements and example usage.
+Here are the tools that are provided in the Lync Server 2013 Persistent Chat Resource Kit. The following section provides a description of each tool, including requirements and example usage.
 
   - AffCheck
 
@@ -103,7 +103,7 @@ The user account under which the tool is run must have Read access to the Persis
 Configure the AffCheck.exe.config file according to the instructions in the config file and run the AffCheck tool without command-line parameters. Following are the contents of the default AffCheck.exe.config.
 
 **AffCheck.exe.config:**
-
+```xml
     <?xml version="1.0" encoding="utf-8" ?>
     <configuration>
       <appSettings>
@@ -136,7 +136,7 @@ Configure the AffCheck.exe.config file according to the instructions in the conf
         <add key="Ignore" value ="DC=uatest,DC=test,DC=contoso,DC=com;DC=test,DC=contoso,DC=com"/>
       </appSettings>
     </configuration>
-
+```
 </div>
 
 </div>
@@ -170,9 +170,9 @@ The file, PersistentChatMonitoringSummary.exe.config, must contain a \<connectio
 <div>
 
 ## Usage
-
+```c++
     PersistentChatMonitoringSummary [-StartDateTime <date>] [-EndDateTime <date>]
-
+```
 These parameters define the selection of data:
 
 **StartDateTime:** Optionally specifies the start date of the selection period. Default: 1/1/1753 12:00:00 AM
@@ -184,7 +184,7 @@ These parameters define the selection of data:
 <div>
 
 ## Example
-
+```c++
     C:\Users\Administrator.VDOMAIN>Desktop\PersistentChatMonitoringSummary.exe
     Reading database connection information, Persistent Chat endpoint uri, and csv output path information from the application config file...
     Connecting to Monitoring database with connection string specified in the application config file...
@@ -193,7 +193,7 @@ These parameters define the selection of data:
     
     The summary information about Persistent Chat sessions from the Monitoring database has been output to C:\PersistentChatMonitoring_dd4ace24-4c8a-4a3d-8fd4-591bdfacf47b.csv
     Press enter to exit...
-
+```
 </div>
 
 </div>
@@ -349,9 +349,9 @@ The file, ChatUsageReport.exe.config, must contain a \<connectionStrings\> secti
 <div>
 
 ## Usage
-
+```c++
     ChatUsageReport [-StartDate {date}] [-EndDate {date}] [-TopActiveUsers {n}] [-TopActiveRooms {n}] [-LeastActiveRooms {n}] [-RoomsInactiveSince {Date}] [-OutputFolder {path}]
-
+```
 These parameters define the selection of data:
 
 **StartDate:** Optionally specifies the UTC start date of the selection period. Default: Earliest Date
@@ -405,11 +405,11 @@ The report will always include the following output:
 ## Example
 
 The following example generates a usage report for the entire year 2001 and places the report in the OutputFolder specified in the ChatUsageReport.exe.config.
-
+```c++
     ChatUsageReport -RoomsInactiveSince 06-20-2010
-
+```
 ChatUsageReport.exe.config:
-
+```xml
     <?xml version="1.0" encoding="utf-8" ?>
     <configuration>
       <connectionStrings>
@@ -428,7 +428,7 @@ ChatUsageReport.exe.config:
         <add key="RoomsInactiveSince" value="01/01/0001"/>
       </appSettings>
     </configuration></configuration>
-
+```
 </div>
 
 </div>
@@ -458,7 +458,7 @@ The user account under which the script is run must have owner access to the Per
 ## Usage
 
 Following are the contents of the default script:
-
+```c++
     /*
     This script will schedule a principal for a forced AD synchronization cycle
     
@@ -494,14 +494,14 @@ Following are the contents of the default script:
          ,nextTry = null
         where
          prinID = <PrinID,int,0>
-
+```
 </div>
 
 </div>
 
 </div>
 
-<span> </span>
+<span> </span>
 
 </div>
 
