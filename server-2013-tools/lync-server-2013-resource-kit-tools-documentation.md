@@ -22,7 +22,7 @@ mtps_version: v=OCS.15
 
 <div id="mainBody">
 
-<span> </span>
+<span> </span>
 
 _**Topic Last Modified:** 2014-01-09_
 
@@ -133,9 +133,9 @@ In Lync Server 2013 ABS Configuration tool, attributes (rows) may be removed by 
 ## Output
 
 ABSConfig stores the Address Book Service configuration in the database.
-
+```C++
     Path: %ProgramFiles%\Microsoft Lync Server 2013\Reskit
-
+```
 </div>
 
 <div>
@@ -344,9 +344,9 @@ Bandwidth Utilization Analyzer can generate graphical plots of bandwidth capacit
 
 Bandwidth Utilization Analyzer has the following two applications (tools):
 
-  - **WanLinkLogCollector.exe**   This tool enables its user to input the required information.
+  - **WanLinkLogCollector.exe**   This tool enables its user to input the required information.
 
-  - **BandwidthUtilizationAnalyzer.xlsm **  A Microsoft Excel spreadsheet software report is automatically launched by WanLinkLogCollector.exe. This application allows the user to apply filters to the report as shown later in this article.
+  - **BandwidthUtilizationAnalyzer.xlsm **  A Microsoft Excel spreadsheet software report is automatically launched by WanLinkLogCollector.exe. This application allows the user to apply filters to the report as shown later in this article.
 
 </div>
 
@@ -382,11 +382,11 @@ Start WanLinkLogCollector.exe at the command prompt or by using Windows Explorer
 
 There are three steps to using WanLinkLogCollector.exe:
 
-1.  **Log the timeline**   Provide the timeline that the report needs to be generated for
+1.  **Log the timeline**   Provide the timeline that the report needs to be generated for
 
-2.  **Specify the file directories**   Provide file location information
+2.  **Specify the file directories**   Provide file location information
 
-3.  **Collect the logs and launch the report viewer **  Execute the command to generate the report
+3.  **Collect the logs and launch the report viewer **  Execute the command to generate the report
 
 <div>
 
@@ -394,9 +394,9 @@ There are three steps to using WanLinkLogCollector.exe:
 
 Logging the timeline allows the tool user to specify the following as shown in the figure below.
 
-1.  **Start date** This is the start date of the timeline that the report is to be generated for; for example, August 1, 2010.
+1.  **Start date** This is the start date of the timeline that the report is to be generated for; for example, August 1, 2010.
 
-2.  **End date** This is the end date of the timeline that the report is to be generated for; for example, September 30, 2010.
+2.  **End date** This is the end date of the timeline that the report is to be generated for; for example, September 30, 2010.
     
     ![Start and End dates in the Bandwidth Utilization A](images/JJ945604.2c597cfc-3372-4d41-816b-26202f607ad8(OCS.15).jpg "Start and End dates in the Bandwidth Utilization A")  
 
@@ -410,7 +410,7 @@ The following file directories can be specified by the user as shown.
 
   - **Server log files location** The folder location where Bandwidth policy server logs are stored. This is typically in \<fileserver\>\\\<choice of FE\>\\AppServerFiles\\PDP.
 
-  - **Temporary file storage location ** The temporary file location where intermediate files are stored while the report is being generated.
+  - **Temporary file storage location ** The temporary file location where intermediate files are stored while the report is being generated.
 
 ![File directories in the Bandwidth Utilization Anal](images/JJ945604.d66daeac-1669-45e3-932d-3f6782840c2a(OCS.15).jpg "File directories in the Bandwidth Utilization Anal")
 
@@ -618,7 +618,7 @@ The purpose of the CPS tool is to provide command-line access to the CPS databas
 ## Requirements
 
 There are no requirements if this tool is run on the same computer that is running CPS. If this tool is run on a remote computer, the SQL Server database used by Lync Server 2013 must be configured to allow remote access. Call Parkometer must be configured with a SQL Server database connection string to connect to the pool’s SQL Server. This SQL Server database connection string is defined in the configuration file, **parkometer.exe.config**. It must be placed in the same directory where parkometer.exe is located. The following XML file is an example of a parkometer.exe.config. The parameters that must be configured are user name (for example, mydomain\\Administrator), password (for example, mypassword), and host name (for example, myserver).
-
+```xml
     <?xml version="1.0" encoding="utf-8" ?>
     <configuration>
       <appSettings>
@@ -629,7 +629,7 @@ There are no requirements if this tool is run on the same computer that is runni
     Integrated Security=false;"/>
       </appSettings>
     </configuration>
-
+```
 </div>
 
 <div>
@@ -695,7 +695,7 @@ Install the Lync Server 2013, Resource Kit Tools. The tool runs on domain-joined
 ## Examples
 
 C:\\Program Files\\Microsoft Lync Server 2013\\ResKit\\StorageService\> ImportStorageServiceData.exe
-
+```c++
     Description:
     This tool will remove orphaned data from the Storage Service database
     for a pool. You are required to run this tool on a machine inside the
@@ -751,7 +751,7 @@ C:\\Program Files\\Microsoft Lync Server 2013\\ResKit\\StorageService\> ImportSt
     Writing log: M:\Dev\Server\ResKit\StorageService\CleanupStorageServiceData.Log_20121009_151040
     Tool has finished execution.  Errors encountered: 0
     C:\Program Files\Microsoft Lync Server 2013\ResKit\StorageService>
-
+```
 </div>
 
 </div>
@@ -766,7 +766,7 @@ C:\\Program Files\\Microsoft Lync Server 2013\\ResKit\\StorageService\> ImportSt
 
 DBAnalyze is a command-line tool that helps administrators to gather analysis reports about the Lync Server 2013 databases. DBAnalyze has the following modes: diagnostic, user data, conference, MCUs, and disk fragmentation:
 
-  - **Diagnostic mode**   Creates a report that includes information about tables (number of records, fragmentation, data size, and index size), data and log file sizes, the last back-up time, contact distribution among servers that are running Microsoft Office Communications Server, the average number of permissions, contacts, containers, subscriptions, publications, endpoints per user, any improperly homed users, users that can’t be routed, the average number of conferences organized per user, scheduled conferences, active conferences, and the database version.
+  - **Diagnostic mode**   Creates a report that includes information about tables (number of records, fragmentation, data size, and index size), data and log file sizes, the last back-up time, contact distribution among servers that are running Microsoft Office Communications Server, the average number of permissions, contacts, containers, subscriptions, publications, endpoints per user, any improperly homed users, users that can’t be routed, the average number of conferences organized per user, scheduled conferences, active conferences, and the database version.
     
     <div class="alert">
     
@@ -777,17 +777,17 @@ DBAnalyze is a command-line tool that helps administrators to gather analysis re
     
     </div>
 
-  - **User data mode**  Reports contact, container, subscription, publication, permission, and contact-group data for a specified user or for users who have that user in their contact and permission lists. This mode also reports summary data for conferences that a user organizes or is invited to.
+  - **User data mode**  Reports contact, container, subscription, publication, permission, and contact-group data for a specified user or for users who have that user in their contact and permission lists. This mode also reports summary data for conferences that a user organizes or is invited to.
 
-  - **Conference mode**   Reports detailed data for a specific conference, including all schedule-time details for the conference, the invitee list, the list of media types allowed for the conference, active MCUs (multipoint control units), the active participant list, and each participant’s signaling state.
+  - **Conference mode**   Reports detailed data for a specific conference, including all schedule-time details for the conference, the invitee list, the list of media types allowed for the conference, active MCUs (multipoint control units), the active participant list, and each participant’s signaling state.
 
-  - **Decode Meeting ID**  Decodes a public switched telephone network (PSTN) meeting ID that is specified by the **/pstnid** switch but does not connect to the back end for detailed information.
+  - **Decode Meeting ID**  Decodes a public switched telephone network (PSTN) meeting ID that is specified by the **/pstnid** switch but does not connect to the back end for detailed information.
 
-  - **Resolve conference**   Decodes a PSTN meeting ID that is specified by the **/pstnid** switch and displays information about the conference indicated by the ID.
+  - **Resolve conference**   Decodes a PSTN meeting ID that is specified by the **/pstnid** switch and displays information about the conference indicated by the ID.
 
-  - **MCUs mode**  Reports the ID, media type, URL, heartbeat status, conference load, and participant load for each MCU in the pool.
+  - **MCUs mode**  Reports the ID, media type, URL, heartbeat status, conference load, and participant load for each MCU in the pool.
 
-  - **Disk fragmentation mode**  Displays the fragmentation status of all disks.
+  - **Disk fragmentation mode**  Displays the fragmentation status of all disks.
 
 This tool can be used to diagnose various problems or to assist administrators with capacity planning. For example, if most of the users homed on server A choose users homed on server B as their contacts, the administrator can move the users on server A to server B to reduce cross-server traffic.
 
@@ -842,14 +842,14 @@ To install Dbanalyze.exe, copy it to a local folder and then run the tool. To us
 ## Examples
 
 The following are examples of valid Dbanalyze.exe commands:
-
+```c++
     dbanalyze.exe /report:diag
     dbanalyze.exe /report:user /user:usera@domainb.com
     dbanalyze.exe /report:conf /user:bob@example.com /conf:1W9J71SKSX2X
     dbanalyze.exe /report:resolve /pstnid:12345
     dbanalyze.exe /report:mcus
     dbanalyze.exe /report:disk
-
+```
 </div>
 
 <div>
@@ -907,7 +907,7 @@ Install the Lync Server 2013, Resource Kit Tools. The tool runs on domain-joined
 <div>
 
 ## Examples
-
+```c++
     >  C:\StorageService>ImportStorageServiceData.exe
     Description:
     This tool will re-import Storage Service (LYSS) flushed queue data back in.  For a pool: you are required to run this tool on a machine inside the pool which has the Lync Server Management Shell installed.  Additionally, all front end machines need to have Windows Powershell Remoting enabled before executing this tool by executing Enable-PSRemoting.  Also, please ensure that all Storage Service instance DB Size are at the 'Normal' level (verify this by viewing Eventlog events). Otherwise re-importing may cause data to be flushed out again if any Storage Service instance DB size level goes above 'Normal'.
@@ -1064,7 +1064,7 @@ Install the Lync Server 2013, Resource Kit Tools. The tool runs on domain-joined
     Log20120910_1609SS
     Tool has finished execution.
     >  C:\StorageService>
-
+```
 </div>
 
 </div>
@@ -1120,7 +1120,7 @@ Install the Lync Server 2013, Resource Kit Tools. The tool runs on domain-joined
 ## Examples
 
 C:\\Program Files\\Microsoft Lync Server 2013\\ResKit\>LookupUserConsole.exe
-
+```c++
     > sip:john.doe@vdomain.com
     
       Execution time (ms):                            171.094
@@ -1156,7 +1156,7 @@ C:\\Program Files\\Microsoft Lync Server 2013\\ResKit\>LookupUserConsole.exe
       Exeuction result:                               UserDoesNotExist
     
     > exit
-
+```
 </div>
 
 </div>
@@ -1595,14 +1595,14 @@ The following command displays the call handling for the user. `SEFAUtil.exe /se
 </div>
 
 **Output**
-
+```c++
     User Aor: sip:katarina@contoso.com
     Display Name: Katarina Larsson
     UM Enabled: True
     Simulring enabled: False
     User Ring time: 00:00:20
     Call Forward No Answer to: voicemail
-
+```
 </div>
 
 <div>
@@ -1614,14 +1614,14 @@ This example sets the call forward/no answer destination and the ring delay. Her
     SEFAUtil.exe /server:lyncserver.contoso.com sip:katarina@contoso.com /enablefwdnoanswer /callanswerwaittime:30 /setfwddestination:+1425555 0126@contoso.com;user=phone
 
 **Output**
-
+```c++
     User Aor: sip:katarina@contoso.com
     Display Name: Katarina Larsson
     UM Enabled: True
     Simulring enabled: False
     User Ring time: 00:00:30
     Call Forward No Answer to: sip:+14255550126@contoso.com;user=phone
-
+```
 </div>
 
 <div>
@@ -1633,13 +1633,13 @@ This example immediately enables call-forwarding to another user.
     SEFAUtil.exe sip:katarina@contoso.com /enablefwdimmediate /setfwddestination:anders@contoso.com
 
 **Output**
-
+```c++
     User Aor: sip:katarina@contoso.com
     Display Name: Katarina Larsson
     UM Enabled: True
     Simulring enabled: False
     Forward immediate to: sip:anders@contoso.com
-
+```
 </div>
 
 <div>
@@ -1647,18 +1647,18 @@ This example immediately enables call-forwarding to another user.
 ## Disable Call Forwarding Immediately
 
 This example immediately disables call forwarding.
-
+```c++
     SEFAUtil.exe /server:lyncserver.contoso.com katarina@contoso.com  /disablefwdimmediate
-
+```
 **Output**
-
+```c++
     User Aor: sip:katarina@contoso.com
     Display Name: Katarina Larsson
     UM Enabled: True
     Simulring enabled: False
     User Ring time: 00:00:30
     Call Forward No Answer to: voicemail
-
+```
 </div>
 
 <div>
@@ -1666,16 +1666,16 @@ This example immediately disables call forwarding.
 ## Add a User as a Delegate and Set Up Simultaneous Ringing of Delegates
 
 This example adds a user as a delegate and sets up simultaneous ringing of delegates.
-
+```c++
     SEFAUtil.exe /server:lyncserver.contoso.com sip:katarina@contoso.com /adddelegate:joe@contoso.com /simulringdelegates
-
+```
 **Output**
-
+```c++
     User Aor: sip:katarina@contoso.com
     Display Name: Katarina Larsson
     UM Enabled: True
     Simultaneously Ringing Delegates: sip:joe@contoso.com
-
+```
 </div>
 
 <div>
@@ -1683,17 +1683,17 @@ This example adds a user as a delegate and sets up simultaneous ringing of deleg
 ## Change Simultaneous Ringing Rule of Delegates
 
 This example changes the simultaneous ringing rule that was set in the previous example to the delayed ringing rule.
-
+```c++
     SEFAUtil.exe /server:lyncserver.contoso.com sip:katarina@contoso.com /delayringdelegates:10
-
+```
 **Output**
-
+```c++
     User Aor: sip:katarina@contoso.com
     Display Name: Katarina Larsson
     UM Enabled: True
     Simulring enabled: False
     Delay Ringing Delegates (delay:10 seconds): sip:joe@contoso.com
-
+```
 </div>
 
 <div>
@@ -1711,18 +1711,18 @@ This example removes the delegate.
 
 
 </div>
-
+```c++
     SEFAUtil.exe /server:lyncserver.contoso.com sip:katarina@contoso.com /removedelegate:joe@contoso.com
-
+```
 **Output**
-
+```c++
     User Aor: sip:katarina@contoso.com
     Display Name: Katarina Larsson
     UM Enabled: True
     Simulring enabled: False
     User Ring time: 00:00:30
     Call Forward No Answer to: voicemail
-
+```
 </div>
 
 <div>
@@ -1730,16 +1730,16 @@ This example removes the delegate.
 ## Add a Delegate and Set Up the Call-Forward to Delegates Rule
 
 This example adds a delegate and sets up the call-forward to delegates rule.
-
+```c++
     SEFAUtil.exe /server:lyncserver.contoso.com sip:katarina@contoso.com /adddelegate:anders@contoso.com /fwdtodelegates
-
+```
 **Output**
-
+```c++
     User Aor: sip:katarina@contoso.com
     Display Name: Katarina Larsson
     UM Enabled: True
     Forwarding calls to Delegates: sip:anders@contoso.com
-
+```
 </div>
 
 <div>
@@ -1747,9 +1747,9 @@ This example adds a delegate and sets up the call-forward to delegates rule.
 ## Enable Simultaneous Ringing and Set a Destination Number
 
 This example enables simultaneous ringing and sets a simultaneous ringing destination number.
-
+```c++
     SEFAUtil.exe /server:lyncserver.contoso.com sip:katarina@contoso.com /setsimulringdestination:+14255550126 /enablesimulring
-
+```
 <div class="alert">
 
 
@@ -1761,13 +1761,13 @@ This example enables simultaneous ringing and sets a simultaneous ringing destin
 </div>
 
 **Output**
-
+```c++
     User Aor: sip:katarina@contoso.com
     Display Name: Katarina Larsson
     UM Enabled: True
     Simulring enabled: True
     Simul_Ringing to: sip:+14255550126@contoso.com;user=phone
-
+```
 </div>
 
 <div>
@@ -1775,18 +1775,18 @@ This example enables simultaneous ringing and sets a simultaneous ringing destin
 ## Disable Simultaneous Ringing
 
 This example disables simultaneous ringing.
-
+```c++
     SEFAUtil.exe /server:lyncserver.contoso.com sip:katarina@contoso.com /disablesimulring
-
+```
 **Output**
-
+```c++
     User Aor: sip:katarina@contoso.com
     Display Name: Katarina Larsson
     UM Enabled: True
     Simulring enabled: False
     User Ring time: 00:00:30
     Call Forward No Answer to: voicemail
-
+```
 </div>
 
 <div>
@@ -1794,9 +1794,9 @@ This example disables simultaneous ringing.
 ## Add a Team Member for Team-Call and Set up Simultaneous Ringing to the Team-Call Members Group
 
 This example adds a team member to the team-call group of a user and enables simultaneous ringing to the team-call group.
-
+```c++
     SEFAUtil.exe /server:lyncserver.contoso.com sip:katarina@contoso.com /addteammember:anders@contoso.com /simulringteam
-
+```
 <div class="alert">
 
 
@@ -1808,12 +1808,12 @@ This example adds a team member to the team-call group of a user and enables sim
 </div>
 
 **Output**
-
+```c++
     User Aor: sip:katarina@contoso.com
     Display Name: Katarina Larsson
     UM Enabled: True
     Team ringing enabled. Team: sip:anders@contoso.com
-
+```
 </div>
 
 <div>
@@ -1821,9 +1821,9 @@ This example adds a team member to the team-call group of a user and enables sim
 ## Remove a Member from the Team-Call Group
 
 This example removes a team member of the team-call group of a user.
-
+```c++
     SEFAUtil.exe /server:lyncserver.contoso.com sip:katarina@contoso.com /removeteammember:anders@contoso.com
-
+```
 <div class="alert">
 
 
@@ -1835,13 +1835,13 @@ This example removes a team member of the team-call group of a user.
 </div>
 
 **Output**
-
+```c++
     User Aor: sip:katarina@contoso.com
     Display Name: Katarina Larsson
     UM Enabled: True
     User Ring time: 00:00:30
     Call Forward No Answer to: voicemail
-
+```
 </div>
 
 <div>
@@ -1849,16 +1849,16 @@ This example removes a team member of the team-call group of a user.
 ## Set the Delayed Ring to the Team-Call Group
 
 This example changes the delayed ring to the team-call group time setting.
-
+```c++
     SEFAUtil.exe /server:lyncserver.contoso.com sip:katarina@contoso.com /delayringteam:5
-
+```
 **Output**
-
+```c++
     User Aor: sip:katarina@contoso.com
     Display Name: Katarina Larsson
     UM Enabled: True
     Delay Ringing Team (delay:5 seconds). Team: sip:anders@contoso.com
-
+```
 </div>
 
 <div>
@@ -1866,9 +1866,9 @@ This example changes the delayed ring to the team-call group time setting.
 ## Enable Team-Call
 
 This example enables team-call for a given user.
-
+```c++
     SEFAUtil.exe /server:lyncserver.contoso.com sip:katarina@contoso.com /simulringteam
-
+```
 <div class="alert">
 
 
@@ -1888,17 +1888,17 @@ This example enables team-call for a given user.
 ## Disable Team-Call
 
 This example disables team-call for a given user.
-
+```c++
     SEFAUtil.exe /server:lyncserver.contoso.com sip:katarina@contoso.com /disableteamcall
-
+```
 **Output**
-
+```c++
     User Aor: sip:katarina@contoso.com
     Display Name: Katarina Larsson
     UM Enabled: True
     User Ring time: 00:00:30
     Call Forward No Answer to: voicemail
-
+```
 </div>
 
 <div>
@@ -1906,16 +1906,16 @@ This example disables team-call for a given user.
 ## Enable Group Call Pickup and Assign a Pickup Group to a User
 
 This example assigns a pickup group to a user and enables Group Call Pickup.
-
+```c++
     SEFAUtil.exe /server:lyncserver.contoso.com sip:katarina@contoso.com /enablegrouppickup:199
-
+```
 **Output**
-
+```c++
     User Aor: sip:katarina@contoso.com
     Display Name: Katarina Larsson
     UM Enabled: True
     Group Pickup Orbit: sip:199;phone-context=user-default@ contoso.com;user=phone
-
+```
 </div>
 
 <div>
@@ -1923,9 +1923,9 @@ This example assigns a pickup group to a user and enables Group Call Pickup.
 ## Disable Group Call Pickup
 
 This example disables Group Call Pickup for a given user.
-
+```c++
     SEFAUtil.exe /server:lyncserver.contoso.com sip:katarina@contoso.com /disablegrouppickup
-
+```
 <div class="alert">
 
 
@@ -1935,11 +1935,11 @@ This example disables Group Call Pickup for a given user.
 
 
 </div>
-
+```c++
     User Aor: sip:katarina@contoso.com
     Display Name: Katarina Larsson
     UM Enabled: True
-
+```
 </div>
 
 </div>
@@ -2040,9 +2040,9 @@ The **–SetupFolder** parameter takes as an argument the directory location of 
 ## Examples
 
 To run the SYSPrep.ps1 script and install the Lync Server 2013 prerequisites, run the following command from an elevated command prompt:
-
+```c++
     ./SysPrep.PS1 -SetupFolder D:\Setup
-
+```
 </div>
 
 </div>
@@ -2135,9 +2135,9 @@ The Move-CsAnnouncementConfiguration script requires the two parameters that are
 ## Moving the Unassigned Number Announcements Configuration from a Lync Server 2010 Pool to a Lync Server 2013 Pool
 
 This example moves the unassigned number announcements from the source pool (Lync Server 2010) to the destination pool (Lync Server 2013).
-
+```c++
     Move-CsAnnouncementConfiguration.ps1 -Source LS2010Pool.contoso.com -Destination LS2013Pool.contoso.com
-
+```
 </div>
 
 <div>
@@ -2145,9 +2145,9 @@ This example moves the unassigned number announcements from the source pool (Lyn
 ## Moving the Unassigned Number Announcements Configuration from a Lync Server 2013 Pool to a Lync Server 2010 Pool
 
 This example moves the unassigned number announcements from the source pool (Lync Server 2013) to the destination pool (Lync Server 2010).
-
+```c++
     Move-CsAnnouncementConfiguration.ps1 -Source LS2013Pool.contoso.com -Destination LS2010Pool.contoso.com
-
+```
 </div>
 
 </div>
@@ -2219,13 +2219,13 @@ The tool must be run using administrator privileges with access to the Content F
 The following table describes the parameters, some of which are used in the examples.
 
 ![Web Conf Data Tool parameters.](images/JJ945604.a733c1c6-5dfc-4874-a74f-bfdee81c1401(OCS.15).jpg "Web Conf Data Tool parameters.")
-
+```c++
     WebConfDataTool.exe /User:user0@contoso.com /Action:query ""/ExpirationDate:08/09/2010 12:00:00""
-
+```
 The preceding example shows how a query command would work. The output of such a command would be a list of all meeting content folders that would be affected by this tool.
-
+```c++
     WebConfDataTool.exe /User:user0@contoso.com /Action:delete
-
+```
 The preceding is an example of a delete command. The delete command will remove all inactive meeting folders from this user.
 
 </div>
@@ -2242,7 +2242,7 @@ This tool can be a valuable resource to administrators who need more precise con
 
 </div>
 
-<span> </span>
+<span> </span>
 
 </div>
 
