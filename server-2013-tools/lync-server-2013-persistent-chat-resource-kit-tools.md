@@ -235,9 +235,9 @@ Create users and channels for use in the stress run:
   - Create a category for your stress channels, and then create as many rooms as are needed under that category. The category should have all stress users in its **Allowed** list (by way of adding their OU), and stress rooms should have a privacy setting of **Open**.
 
   - We recommend creating extra stress rooms. You can create 50,000 rooms with the following Windows PowerShell command-line interface command:
-    
+    ```c++
         for ($i = 0; $i -le 50000; $i++) { New-CsPersistentChatRoom -Category <parent category> -Name "StressChan_$i" -Privacy Open }
-
+	```
 Edit the configuration files to fit your topology:
 
 In **LoaderProcess.exe.config**, change “controller.contoso.com” to the controller machine’s fully qualified domain name (FQDN).
