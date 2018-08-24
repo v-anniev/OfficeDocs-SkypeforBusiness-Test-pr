@@ -1,6 +1,6 @@
 ﻿---
-title: 'Lync Server 2013: Managing Lync Server disaster recovery, high availability, and Backup Service'
-TOCTitle: Managing Lync Server 2013 disaster recovery, high availability, and Backup Service
+title: 'Managing Lync Server disaster recovery, high availability, and Backup Service'
+TOCTitle: Managing Lync Server disaster recovery, high availability, and Backup Service
 ms:assetid: f4cd36fb-ffd6-48fa-b761-e11b3bcff91a
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ721939(v=OCS.15)
 ms:contentKeyID: 49733876
@@ -36,7 +36,7 @@ The disaster recovery procedures in the rest of this section assume the followin
 
   - If the Central Management store is hosted on either pool, it is installed and running on both of the paired pools, with one of those pools hosting the active master and the other pool hosting the standby.
 
-<div class="alert">
+<div>
 
 
 > [!IMPORTANT]

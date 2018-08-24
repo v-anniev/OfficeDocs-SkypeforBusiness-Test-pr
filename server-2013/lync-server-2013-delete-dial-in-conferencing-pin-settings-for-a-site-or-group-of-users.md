@@ -1,5 +1,5 @@
 ﻿---
-title: 'Lync Server 2013: Delete dial-in conferencing PIN settings for a site or group of users'
+title: 'Delete dial-in conferencing PIN settings for a site or group of users'
 TOCTitle: Delete dial-in conferencing PIN settings for a site or group of users
 ms:assetid: 15a9faee-d024-4c0e-b2a0-fe7e7dc00589
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg520955(v=OCS.15)
@@ -28,7 +28,7 @@ _**Topic Last Modified:** 2012-10-18_
 
 Follow these steps to delete a user-level or a site-level PIN policy.
 
-<div class="alert">
+<div>
 
 
 > [!NOTE]

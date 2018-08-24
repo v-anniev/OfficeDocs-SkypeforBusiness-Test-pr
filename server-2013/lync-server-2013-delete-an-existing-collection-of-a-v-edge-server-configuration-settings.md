@@ -1,5 +1,5 @@
 ﻿---
-title: 'Lync Server 2013: Delete an existing collection of A/V Edge Server configuration settings'
+title: 'Delete an existing collection of A/V Edge Server configuration settings'
 TOCTitle: Delete an existing collection of A/V Edge Server configuration settings
 ms:assetid: 668d3613-e464-4b68-967a-cfff90b9ce4b
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ688077(v=OCS.15)

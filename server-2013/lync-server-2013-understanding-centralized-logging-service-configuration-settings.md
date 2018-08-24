@@ -1,5 +1,5 @@
 ﻿---
-title: 'Lync Server 2013: Understanding Centralized Logging Service configuration settings'
+title: 'Understanding Centralized Logging Service configuration settings'
 TOCTitle: Understanding Centralized Logging Service configuration settings
 ms:assetid: 3c34e600-0b91-43dc-b4cc-90b6a70ee12e
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ688029(v=OCS.15)
@@ -38,7 +38,7 @@ The Centralized Logging Service is configured to define what the logging service
     
         Get-CsClsConfiguration
     
-    <div class="alert">
+    <div>
     
 
     > [!TIP]

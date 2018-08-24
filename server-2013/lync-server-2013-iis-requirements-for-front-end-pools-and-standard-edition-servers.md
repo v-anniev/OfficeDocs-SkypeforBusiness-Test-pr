@@ -1,5 +1,5 @@
 ﻿---
-title: 'Lync Server 2013: IIS requirements for Front End pools and Standard Edition servers'
+title: 'IIS requirements for Front End pools and Standard Edition servers'
 TOCTitle: IIS requirements for Front End pools and Standard Edition servers
 ms:assetid: e8a6c7ac-b6d5-4c7e-abe9-d8ea5eedbc62
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg399038(v=OCS.15)
@@ -48,7 +48,7 @@ In addition, the cumulative update for Lync Server 2010: November 2011 installer
 
   - On Front End Servers or Standard Edition servers and on Directors to enable mobile devices to automatically discover mobility resources
 
-<div class="alert">
+<div>
 
 
 > [!NOTE]
@@ -60,7 +60,7 @@ In addition, the cumulative update for Lync Server 2010: November 2011 installer
 
 Lync Server requires the following IIS modules to be installed:
 
-<div class="alert">
+<div>
 
 
 > [!IMPORTANT]
@@ -184,7 +184,7 @@ The following table lists the URIs for the virtual directories for internal acce
 </table>
 
 
-<div class="alert">
+<div>
 
 
 > [!NOTE]
@@ -194,7 +194,7 @@ The following table lists the URIs for the virtual directories for internal acce
 
 </div>
 
-<div class="alert">
+<div>
 
 <table>
 <thead>

@@ -1,5 +1,5 @@
 ﻿---
-title: 'Lync Server 2013: Managing the Archiving of internal and external communications'
+title: 'Managing the Archiving of internal and external communications'
 TOCTitle: Managing the Archiving of internal and external communications
 ms:assetid: 6c2cf941-3204-4f1a-a7e0-416c828056d9
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ204977(v=OCS.15)
@@ -36,7 +36,7 @@ You initially set up Archiving policies when you deploy Archiving, but you can c
 
 For details about how policies are implemented, including the hierarchy of policies, see [How Archiving works in Lync Server 2013](lync-server-2013-how-archiving-works.md) in the Planning documentation, Deployment documentation, or Operations documentation.
 
-<div class="alert">
+<div>
 
 
 > [!NOTE]

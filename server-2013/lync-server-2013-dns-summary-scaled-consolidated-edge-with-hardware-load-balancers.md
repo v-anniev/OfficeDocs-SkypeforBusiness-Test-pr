@@ -1,5 +1,5 @@
 ﻿---
-title: 'Lync Server 2013: DNS summary - Scaled consolidated edge with hardware load balancers'
+title: 'DNS summary - Scaled consolidated edge with hardware load balancers'
 TOCTitle: DNS summary - Scaled consolidated edge with hardware load balancers
 ms:assetid: 8453297c-da1d-4b9e-a37e-6721458c6feb
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg398670(v=OCS.15)
@@ -54,7 +54,7 @@ You can configure two network adapters in each of your Edge Servers as follows:
     
     Three public IP addresses are assigned to this network adapter, for example 131.107.155.10 for Access Edge service, 131.107.155.20 for Web Conferencing Edge service, 131.107.155.30 for A/V Edge service.
     
-    <div class="alert">
+    <div>
     
 
     > [!NOTE]
@@ -67,7 +67,7 @@ You can configure two network adapters in each of your Edge Servers as follows:
     
     Web Conferencing Edge service and A/V Edge service IP addresses secondary.
 
-<div class="alert">
+<div>
 
 
 > [!TIP]

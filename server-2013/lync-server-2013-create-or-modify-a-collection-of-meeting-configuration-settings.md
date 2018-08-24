@@ -1,5 +1,5 @@
 ﻿---
-title: 'Lync Server 2013: Create or modify a collection of meeting configuration settings'
+title: 'Create or modify a collection of meeting configuration settings'
 TOCTitle: Create or modify a collection of meeting configuration settings
 ms:assetid: ce6773c1-a0d5-4405-8e32-33a6f3a46a1a
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ721889(v=OCS.15)
@@ -62,7 +62,7 @@ You can use the settings on the Meeting Configuration page to define various cha
     
       - To customize the logo that appears in the meeting invite, in **Logo URL**, enter the location of the logo.
         
-        <div class="alert">
+        <div>
         
 
         > [!NOTE]

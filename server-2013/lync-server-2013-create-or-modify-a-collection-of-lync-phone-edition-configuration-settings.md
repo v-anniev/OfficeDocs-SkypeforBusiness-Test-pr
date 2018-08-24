@@ -1,5 +1,5 @@
 ﻿---
-title: 'Lync Server 2013: Create or modify a collection of Lync Phone Edition configuration settings'
+title: 'Create or modify a collection of Lync Phone Edition configuration settings'
 TOCTitle: Create or modify a collection of Lync Phone Edition configuration settings
 ms:assetid: 6cf714af-8f57-4a71-89ad-0a776302b2ba
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ688086(v=OCS.15)
@@ -46,7 +46,7 @@ Configuration settings consist of the collection name, scope (global or site), S
     
       - To edit any of the settings in an existing collection, click the collection, click the **Edit** menu, click **Show details**, and then make your changes.
         
-        <div class="alert">
+        <div>
         
 
         > [!TIP]

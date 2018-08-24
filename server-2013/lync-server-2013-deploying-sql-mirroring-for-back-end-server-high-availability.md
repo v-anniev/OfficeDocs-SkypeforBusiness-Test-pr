@@ -1,5 +1,5 @@
 ﻿---
-title: 'Lync Server 2013: Deploying SQL mirroring for Back End Server high availability'
+title: 'Deploying SQL mirroring for Back End Server high availability'
 TOCTitle: Deploying SQL mirroring for Back End Server high availability
 ms:assetid: 70224520-b5c8-4940-a08e-7fb9b1adde8d
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ204992(v=OCS.15)
@@ -52,7 +52,7 @@ With SQL mirroring, database recovery mode is always set to **Full**, which mean
 
 With SQL mirroring, you can either configure the topology for mirroring when you create the pools, or after the pools are already created.
 
-<div class="alert">
+<div>
 
 
 > [!IMPORTANT]
@@ -62,7 +62,7 @@ With SQL mirroring, you can either configure the topology for mirroring when you
 
 </div>
 
-<div class="alert">
+<div>
 
 
 > [!IMPORTANT]
@@ -79,11 +79,11 @@ With SQL mirroring, you can either configure the topology for mirroring when you
 
 </div>
 
-<div class="alert">
+<div>
 
 
 > [!NOTE]
-> A file share has to be created for the mirror files to be written to, and the service that SQL Server and SQL Agent are running under needs read/write access. If the SQL Server service is running under the context of Network Service, you can add &lt;Domain&gt;\&lt;SQLSERVERNAME&gt;$ of both the Principal and Mirror SQL Servers to the share permissions. The $ is important to identify that this is a computer account.
+> A file share has to be created for the mirror files to be written to, and the service that SQL Server and SQL Agent are running under needs read/write access. If the SQL Server service is running under the context of Network Service, you can add &lt;Domain&gt;\\&lt;SQLSERVERNAME&gt;$ of both the Principal and Mirror SQL Servers to the share permissions. The $ is important to identify that this is a computer account.
 
 
 

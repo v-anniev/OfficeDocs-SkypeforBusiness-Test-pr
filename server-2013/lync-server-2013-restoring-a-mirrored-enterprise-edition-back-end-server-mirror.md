@@ -1,5 +1,5 @@
 ﻿---
-title: 'Lync Server 2013: Restoring a mirrored Enterprise Edition Back End Server - mirror'
+title: 'Restoring a mirrored Enterprise Edition Back End Server - mirror'
 TOCTitle: Restoring a mirrored Enterprise Edition Back End Server - mirror
 ms:assetid: 4b3c8eae-6f1f-4377-b39b-6699e725c517
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ945626(v=OCS.15)
@@ -66,7 +66,7 @@ We recommend that you take an image copy of the system before you start restorat
     
       - Follow the wizard until a prompt of **Create Mirror Database** appears. Select the database that you want to install and complete this process.
         
-        <div class="alert">
+        <div>
         
 
         > [!TIP]

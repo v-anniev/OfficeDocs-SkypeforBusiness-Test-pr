@@ -1,5 +1,5 @@
 ﻿---
-title: 'Lync Server 2013: Configuring Quality of Service on Microsoft Lync Phone Edition devices'
+title: 'Configuring Quality of Service on Microsoft Lync Phone Edition devices'
 TOCTitle: Configuring Quality of Service on Microsoft Lync Phone Edition devices
 ms:assetid: a6eb2620-a512-4ab6-bdfd-eb76be43bbfe
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ205137(v=OCS.15)
@@ -44,7 +44,7 @@ If you have not made any changes to your UC phone configuration settings then yo
 
 For Quality of Service purposes, only one of these properties is of interest: VoiceDiffServTag. The VoiceDiffServTag represents the DSCP value assigned to voice traffic emanating from a Lync Phone Edition device.
 
-<div class="alert">
+<div>
 
 
 > [!NOTE]

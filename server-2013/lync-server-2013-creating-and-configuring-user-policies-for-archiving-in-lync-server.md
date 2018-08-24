@@ -1,6 +1,6 @@
 ﻿---
-title: 'Lync Server 2013: Creating and configuring user policies for Archiving in Lync Server'
-TOCTitle: Creating and configuring user policies for Archiving in Lync Server 2013
+title: 'Creating and configuring user policies for Archiving in Lync Server'
+TOCTitle: Creating and configuring user policies for Archiving in Lync Server
 ms:assetid: 5af0e605-3563-4d6f-a3c6-511d204a3165
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ204923(v=OCS.15)
 ms:contentKeyID: 48184234
@@ -30,7 +30,7 @@ To enable or disable Archiving for specific users homed on Lync Server, you must
 
 For details about how Archiving policies work, including the hierarchy for global, site, and user policies, see [How Archiving works in Lync Server 2013](lync-server-2013-how-archiving-works.md) in the Planning documentation, in the Deployment documentation, or in the Operations documentation.
 
-<div class="alert">
+<div>
 
 
 > [!NOTE]

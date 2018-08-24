@@ -1,5 +1,5 @@
 ﻿---
-title: 'Lync Server 2013: Using Best Practices Analyzer to scan your deployment for potential issues'
+title: 'Using Best Practices Analyzer to scan your deployment for potential issues'
 TOCTitle: Using Best Practices Analyzer to scan your deployment for potential issues
 ms:assetid: 09c84509-dc91-4e7b-882b-3c467b6b026d
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg591343(v=OCS.15)
@@ -52,7 +52,7 @@ To run a Best Practices Analyzer scan, you must specify the following:
     
       - To specify different credentials that you want to use for Active Directory Domain Services, Edge Server, or Exchange Server, click **Show advanced logon options**, select each check box for which separate credentials are required, specify the credentials for each selected check box, and then click **Connect to the Active Directory server**.
     
-    <div class="alert">
+    <div>
     
 
     > [!NOTE]
@@ -73,7 +73,7 @@ To run a Best Practices Analyzer scan, you must specify the following:
     
       - To view other reports, click **Other Reports**.
     
-    <div class="alert">
+    <div>
     
 
     > [!NOTE]

@@ -1,5 +1,5 @@
 ﻿---
-title: 'Lync Server 2013: Enabling or disabling Archiving of IM or conferencing sessions'
+title: 'Enabling or disabling Archiving of IM or conferencing sessions'
 TOCTitle: Enabling or disabling Archiving of IM or conferencing sessions
 ms:assetid: aa4b5983-dbe1-4d64-8a18-fe2c33994e94
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg182567(v=OCS.15)
@@ -34,7 +34,7 @@ In Lync Server 2013 Control Panel, you use Archiving configurations to enable an
 
 You initially set up Archiving configurations when you deploy Archiving, but you can change, add, and delete configurations after deployment. For details about how Archiving configurations are implemented, including which options you can specify and the hierarchy of Archiving configurations, see [How Archiving works in Lync Server 2013](lync-server-2013-how-archiving-works.md) in the Planning documentation, Deployment documentation, or Operations documentation.
 
-<div class="alert">
+<div>
 
 
 > [!NOTE]

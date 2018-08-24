@@ -1,5 +1,5 @@
 ﻿---
-title: 'Lync Server 2013: Enable or disable sending an Archiving disclaimer to federated partners'
+title: 'Enable or disable sending an Archiving disclaimer to federated partners'
 TOCTitle: Enable or disable sending an Archiving disclaimer to federated partners
 ms:assetid: c8e9a2fa-9dc1-4e4d-919f-56ece8004864
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg182584(v=OCS.15)
@@ -28,7 +28,7 @@ _**Topic Last Modified:** 2013-02-23_
 
 At the time you deployed your Edge Servers and enabled federation for your organization, you should have specified whether to automatically send the archiving disclaimer to federated partners. If you archive external communications, you should enable the sending of an archiving disclaimer. Use the procedure in this topic to change that configuration.
 
-<div class="alert">
+<div>
 
 
 > [!NOTE]

@@ -1,5 +1,5 @@
 ﻿---
-title: 'Lync Server 2013: Configuring partner applications in Lync Server 2013 and Exchange Server 2013'
+title: 'Configuring partner applications in Lync Server 2013 and Exchange Server 2013'
 TOCTitle: Configuring partner applications in Lync Server 2013 and Exchange Server 2013
 ms:assetid: 9c3a3054-6201-433f-b128-4c49d3341370
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ688151(v=OCS.15)

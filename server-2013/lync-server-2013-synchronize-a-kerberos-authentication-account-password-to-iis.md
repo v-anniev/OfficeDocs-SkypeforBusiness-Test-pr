@@ -1,5 +1,5 @@
 ﻿---
-title: 'Lync Server 2013: Synchronize a Kerberos authentication account password to IIS'
+title: 'Synchronize a Kerberos authentication account password to IIS'
 TOCTitle: Synchronize a Kerberos authentication account password to IIS
 ms:assetid: 05925a66-2684-4c1b-adfa-69bd0da1bf38
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg398107(v=OCS.15)
@@ -46,7 +46,7 @@ In a site, Front End Servers, Standard Edition servers, and Directors can use a 
     
         Set-CsKerberosAccountPassword -FromComputer fe01.contoso.com -ToComputer dir01.contoso.com
     
-    <div class="alert">
+    <div>
     
 
     > [!IMPORTANT]
@@ -55,7 +55,7 @@ In a site, Front End Servers, Standard Edition servers, and Directors can use a 
     
     </div>
     
-    <div class="alert">
+    <div>
     
 
     > [!IMPORTANT]

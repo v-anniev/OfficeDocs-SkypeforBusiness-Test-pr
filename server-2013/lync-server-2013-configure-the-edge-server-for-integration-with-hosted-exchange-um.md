@@ -1,5 +1,5 @@
 ﻿---
-title: 'Lync Server 2013: Configure the Edge Server for integration with hosted Exchange UM'
+title: 'Configure the Edge Server for integration with hosted Exchange UM'
 TOCTitle: Configure the Edge Server for integration with hosted Exchange UM
 ms:assetid: ede3f2f9-f412-418e-a705-8d8ec98176c5
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg399075(v=OCS.15)
@@ -40,7 +40,7 @@ For details, see the Lync Server Management Shell documentation for the followin
 
   - [New-CsHostingProvider](new-cshostingprovider.md)
 
-<div class="alert">
+<div>
 
 
 > [!IMPORTANT]
@@ -96,7 +96,7 @@ For details, see the Lync Server Management Shell documentation for the followin
     
       - **EnabledSharedAddressSpace** indicates whether the hosting provider is being used in a shared SIP address space (split domain) scenario.
         
-        <div class="alert">
+        <div>
         
 
         > [!NOTE]

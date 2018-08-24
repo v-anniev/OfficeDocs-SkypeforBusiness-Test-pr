@@ -1,5 +1,5 @@
 ﻿---
-title: 'Lync Server 2013: Configure a trusted application entry for remote call control'
+title: 'Configure a trusted application entry for remote call control'
 TOCTitle: Configure a trusted application entry for remote call control
 ms:assetid: 37777f93-8b24-40cf-808e-7c6230eb2132
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg558636(v=OCS.15)
@@ -28,7 +28,7 @@ _**Topic Last Modified:** 2015-11-02_
 
 The SIP/CSTA gateway must be configured as a trusted application in order for Lync Server to apply a static route to route calls to the gateway.
 
-<div class="alert">
+<div>
 
 
 > [!IMPORTANT]

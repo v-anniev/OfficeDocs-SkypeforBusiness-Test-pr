@@ -1,5 +1,5 @@
 ﻿---
-title: 'Lync Server 2013: Create or modify a normalization rule by using Build a Normalization Rule'
+title: 'Create or modify a normalization rule by using Build a Normalization Rule'
 TOCTitle: Create or modify a normalization rule by using Build a Normalization Rule
 ms:assetid: e8547d7b-f74d-4a73-9a7d-df20d7a87fcd
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg399036(v=OCS.15)
@@ -68,7 +68,7 @@ Complete the following steps if you want to create or modify a normalization rul
 
 9.  (Optional) Enter a number to test the normalization rule, and then click **Go**. The test results are displayed under **Enter a number to test**.
     
-    <div class="alert">
+    <div>
     
 
     > [!NOTE]
@@ -83,7 +83,7 @@ Complete the following steps if you want to create or modify a normalization rul
 
 12. On the **Dial Plan** page, click **Commit**, and then click **Commit all**.
     
-    <div class="alert">
+    <div>
     
 
     > [!NOTE]

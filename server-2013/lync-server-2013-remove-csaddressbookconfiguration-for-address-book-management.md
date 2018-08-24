@@ -1,5 +1,5 @@
 ﻿---
-title: 'Lync Server 2013: Remove-CsAddressBookConfiguration for Address Book management'
+title: 'Remove-CsAddressBookConfiguration for Address Book management'
 TOCTitle: Remove-CsAddressBookConfiguration for Address Book management
 ms:assetid: 5d173ebe-ec4d-4640-8432-a25071ea9cc5
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg429705(v=OCS.15)

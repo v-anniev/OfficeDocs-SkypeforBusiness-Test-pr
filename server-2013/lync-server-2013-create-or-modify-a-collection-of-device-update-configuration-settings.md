@@ -1,5 +1,5 @@
 ﻿---
-title: 'Lync Server 2013: Create or modify a collection of Device Update configuration settings'
+title: 'Create or modify a collection of Device Update configuration settings'
 TOCTitle: Create or modify a collection of Device Update configuration settings
 ms:assetid: 3e8ce95f-a8c8-417c-b1f7-0f759a567aff
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ994029(v=OCS.15)
@@ -28,7 +28,7 @@ _**Topic Last Modified:** 2013-02-23_
 
 Device update configuration settings can be created (at the site scope only) by using Windows PowerShell and the **New-CsDeviceUpdateConfiguration** cmdlet and modified by using the **Set-CsDeviceUpdateConfiguration** cmdlet. These cmdlets can be run either from the Lync Server 2013 Management Shell or from a remote session of Windows PowerShell.
 
-<div class="alert">
+<div>
 
 
 > [!NOTE]

@@ -1,5 +1,5 @@
 ﻿---
-title: 'Lync Server 2013: Group Call Pickup configuration prerequisites and user rights'
+title: 'Group Call Pickup configuration prerequisites and user rights'
 TOCTitle: Group Call Pickup configuration prerequisites and user rights
 ms:assetid: 8757b1d3-751d-49c3-b1b8-b678f663f18e
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ945641(v=OCS.15)
@@ -66,7 +66,7 @@ Configuring Group Call Pickup requires any of the following administrative roles
 
   - **CsAdministrator:** This administrator role can perform all of the tasks of CsVoiceAdministrator, CsServerAdministrator, and CsUserAdministrator.
 
-<div class="alert">
+<div>
 
 
 > [!NOTE]

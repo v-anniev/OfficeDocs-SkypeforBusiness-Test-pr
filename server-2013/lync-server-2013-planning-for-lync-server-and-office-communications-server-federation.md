@@ -1,5 +1,5 @@
 ﻿---
-title: 'Lync Server 2013: Planning for Lync Server and Office Communications Server federation'
+title: 'Planning for Lync Server and Office Communications Server federation'
 TOCTitle: Planning for Lync Server and Office Communications Server federation
 ms:assetid: c9eaf06b-054f-41a4-ad0c-499400d6c4c7
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ205335(v=OCS.15)
@@ -59,7 +59,7 @@ Enabling federation between Microsoft Lync Server 2013, Lync Server 2010 and Off
       - <span></span>  
         For manual configuration of federation, you must have the fully qualified domain name (FQDN) of the partner’s Edge Server and domain name, or online domain name, which is entered in the Lync Server Control Panel, **Federation and External Access**, **SIP Federated Domains**. Create a **New** policy or **Edit** an existing policy to either allow or block domains by FQDN.
         
-        <div class="alert">
+        <div>
         
 
         > [!WARNING]
@@ -68,7 +68,7 @@ Enabling federation between Microsoft Lync Server 2013, Lync Server 2010 and Off
         
         </div>
         
-        <div class="alert">
+        <div>
         
 
         > [!NOTE]
@@ -80,7 +80,7 @@ Enabling federation between Microsoft Lync Server 2013, Lync Server 2010 and Off
       - <span></span>  
         For discovered partner federation, where partners can discover your Edge Server, you create an SRV record in your external DNS - \_sipfederationtls.\_tcp.contoso.com – which points to the port 5061 and the host (A) record of your Edge Server
         
-        <div class="alert">
+        <div>
         
 
         > [!IMPORTANT]
@@ -97,7 +97,7 @@ The following information will aid you in defining the certificate, port/protoco
 
 Planning for certificates, firewall and port/protocol requirements and DNS requirements is generally a straight forward process if you have planned or deployed your Microsoft Lync Server 2013 Edge Servers. Because federation is an additional feature that uses the existing Edge Server, the planning requirements are generally met by the Edge Server planning and deployment. You should use the following tables to determine that your requirements are met and make changes in port/protocol and DNS accordingly.
 
-<div class="alert">
+<div>
 
 
 > [!IMPORTANT]

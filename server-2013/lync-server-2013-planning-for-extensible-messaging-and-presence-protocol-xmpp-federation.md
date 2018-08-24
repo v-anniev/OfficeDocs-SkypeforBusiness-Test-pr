@@ -1,5 +1,5 @@
 ﻿---
-title: 'Lync Server 2013: Planning for extensible messaging and presence protocol (XMPP) federation'
+title: 'Planning for extensible messaging and presence protocol (XMPP) federation'
 TOCTitle: Planning for extensible messaging and presence protocol (XMPP) federation
 ms:assetid: 952b33e2-1f58-4831-9a39-1dfec2a316ad
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ205107(v=OCS.15)
@@ -30,7 +30,7 @@ Previous versions of Lync Server and Office Communications Server provided an ex
 
 Deployment and configuration of XMPP is covered in [Deploying external user access in Lync Server 2013](lync-server-2013-deploying-external-user-access.md) You plan for supporting XMPP in your organization by defining port and protocol rules on your firewall, configuration of certificates, and adding DNS records. The following topics in this section summarize the information that you will need to successfully plan XMPP federation for your deployment.
 
-<div class="alert">
+<div>
 
 
 > [!IMPORTANT]

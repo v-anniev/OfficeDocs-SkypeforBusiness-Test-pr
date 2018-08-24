@@ -1,5 +1,5 @@
 ﻿---
-title: 'Lync Server 2013: Delete an existing collection of Lync Phone Edition configuration settings'
+title: 'Delete an existing collection of Lync Phone Edition configuration settings'
 TOCTitle: Delete an existing collection of Lync Phone Edition configuration settings
 ms:assetid: 1bfc427d-4dcd-4199-b25f-8d5cfec2164f
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ687984(v=OCS.15)
@@ -28,7 +28,7 @@ _**Topic Last Modified:** 2013-02-23_
 
 If you no longer want to use a collection of settings for devices running Lync Phone Edition, delete it. If you delete a collection for a site, the global settings will apply to the phones in that site. You cannot delete the global collection.
 
-<div class="alert">
+<div>
 
 
 > [!NOTE]
@@ -50,7 +50,7 @@ If you no longer want to use a collection of settings for devices running Lync P
 
 4.  On the **Device Configuration** page, click the collection you want to delete, click the **Edit** menu, and then click **Delete**.
     
-    <div class="alert">
+    <div>
     
 
     > [!NOTE]
